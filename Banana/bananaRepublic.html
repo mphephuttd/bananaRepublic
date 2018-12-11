@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+		
+		<head>
+		<meta name = "Description" content="HTML form for Banana Republic">
+		<meta name = "Author" content="David Mphephu">
+		<link rel="icon" href="C:/Users/mphep/Desktop/Banana/download.png" type="png" />
+		<title>Banana Republic</title>
+		<!-- //my-css , some css is done inline  -->
+<style>
+
+  input[type="text"]
+  {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: #3F7D2A;
+  }
+
+img 
+  {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  max-width:200px
+  }
+h1,p,legend
+  {color: #707070;
+  }
+  
+  ::placeholder { 
+  color: white;
+  opacity: 1;
+}
+</style>
+		</head>
+		
+	    	
+<body background ="C:/Users/mphep/Desktop/Banana/bground2.jpg" >
+	<form align = "center">
+	<!-- //start of welcome screen -->
+	<h1 size="26" align="center" style color="color:#707070" ><b>Welcome</b></h1>
+	</br></br>
+	<img src="C:/Users/mphep/Desktop/Banana/bground.jpg" alt="company-logo"></br>
+	
+	</br></br>
+	<h1 size="20" align="center" style color="#707070" ><b>Login</b></h1>
+	<p>Content marked [*] is REQUIRED for login.</p>
+	
+	<p><label><b>Username *</b></label></br><input type= "text" placeholder="username" required></p>
+	 <p><label><b>Password *</b></label></br><input type= "text" placeholder="password " required></p>
+	
+	</br></br>
+
+	<p align="center" style color="color:#ffffff"><input type="submit" value="LOGIN"><p>
+	
+	</br></br>
+	
+	<h1 size="20" align="center"style color="#707070" ><b>Register New User</b></h1></br>
+	
+	<!-- //container called wrapper which uses javascript and wraps the uploaded profile picture cropping it to a round image. -->
+	<div id="wrapper"  align="center" action="upload.php" method="post" enctype="multipart/form-data">
+      Image upload preview             :             
+	
+	<input type="file" accept="image/*" onchange="preview_image(event)">
+	</br>
+	<img id="output_image"/>
+	
+	<script type='text/javascript'>
+     function preview_image(event) 
+     {
+     var reader = new FileReader();
+     reader.onload = function()
+     {
+     var output = document.getElementById('output_image');
+     output.src = reader.result;
+     }
+     reader.readAsDataURL(event.target.files[0]);
+     }
+     </script>
+
+	</div>
+	
+	<!-- //Form with input boxes to place data-->
+	<form align="center">
+	<p style="color:#707070;">Content  marked [*] is REQUIRED for registration</p>
+	<p ><label><b>Fullname *</b></label></br><input type= "text" placeholder="fullname" required></p>
+	<p><label ><b>Phone number (MAX 10)</b></label></br><input maxlength="10" type= "text" placeholder="phonenumber"></p>
+	 <p><label><b>Username *</b></label></br><input type= "text" placeholder="username" required></p>
+	 <p><label><b>Password *</b></label></br><input type= "text" placeholder="password " required></p>
+	 <p><label><b>Email *</b></label></br><input type= "text" placeholder="email" required></p>
+	
+	
+	<legend align = "center"><b>Select Gender</b></legend>
+	</br>
+		<input type="radio" name="Male"[] value="Male"> Male
+		<input type="radio" name="Non-Binary"[] value="Non-Binary"> Non-Binary
+		<input type="radio" name="Female"[] value="Female"> Female
+	</br>
+	
+	<p><label><b>Date of Birth</b></label></br><input type= "date" name="DOB"></p>	
+	</br>
+	<!-- //button to submit form data-->
+	<input type="submit" value="SUBMIT">
+	<!-- //button to reset form data-->
+	<input type="reset" value="RESET">
+	
+	
+	</form>
+	
+		</body>
+			</html>
+		
+		
