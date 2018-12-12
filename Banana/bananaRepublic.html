@@ -18,6 +18,26 @@
   margin-bottom: 10px;
   background-color: #3F7D2A;
   }
+  
+    input[type="submit"]
+  {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: #FBED26;
+  }
+   
+   input[type="reset"]
+  {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: #FBED26;
+  }
 
 img 
   {
@@ -26,14 +46,17 @@ img
   border-radius: 50%;
   max-width:200px
   }
-h1,p,legend
+  
+h1,p,legend,label
   {color: #707070;
   }
   
-  ::placeholder { 
+::placeholder 
+  { 
   color: white;
   opacity: 1;
-}
+  }
+  
 </style>
 		</head>
 		
@@ -47,20 +70,20 @@ h1,p,legend
 	
 	</br></br
 	<form>
-	<h1 size="20" align="center" style color="#707070" ><b>Login</b></h1>
-	<p>Content marked [*] is REQUIRED for login.</p>
+	<h1 size="20" align="center"><b>Login</b></h1>
+	<p>Content marked [*] is REQUIRED for login.
 	
-	<p><label><b>Username *</b></label></br><input type= "text" placeholder="username" required></p>
-	 <p><label><b>Password *</b></label></br><input type= "text" placeholder="password " required></p>
+	 <label><b>Username *</b></label></br><input type= "text" placeholder="username" required>
+	 <label><b>Password *</b></label></br><input type= "text" placeholder="password " required></p>
 	
 	</br></br>
 
-	<p align="center" style color="color:#ffffff"><input type="submit" value="LOGIN"><p>
+	<input type="submit" value="LOGIN">
 	<p align="center" >Scroll down to register account...</p>
 	</br>
 	</form>
 	
-	<h1 size="20" align="center"style color="#707070" ><b>Register New User</b></h1></br>
+	<h1 size="20" align="center" ><b>Register New User</b></h1></br>
 	
 	<!-- //container called wrapper which uses javascript and wraps the uploaded profile picture cropping it to a round image. -->
 	<div id="wrapper"  align="center" action="upload.php" method="post" enctype="multipart/form-data">
@@ -87,23 +110,23 @@ h1,p,legend
 	
 	<!-- //Form with input boxes to place data-->
 	<form align="center">
-	<p style="color:#707070;">Content  marked [*] is REQUIRED for registration</p>
-	<p ><label><b>Fullname *</b></label></br><input type= "text" placeholder="fullname" required></p>
-	<p><label ><b>Phone number (MAX 10)</b></label></br><input maxlength="10" type= "text" placeholder="phonenumber"></p>
-	 <p><label><b>Username *</b></label></br><input type= "text" placeholder="username" required></p>
-	 <p><label><b>Password *</b></label></br><input type= "text" placeholder="password " required></p>
-	 <p><label><b>Email *</b></label></br><input type= "text" placeholder="email" required></p>
+	<p >Content  marked [*] is REQUIRED for registration</p>
+	<p> <label><b>Fullname *</b></label></br><input type= "text" placeholder="fullname" required>
+	 <label ><b>Phone number (MAX 10)</b></label></br><input maxlength="10" type= "text" placeholder="phonenumber">
+	 <label><b>Username *</b></label></br><input type= "text" placeholder="username" required>
+	 <label><b>Password *</b></label></br><input type= "text" placeholder="password " required>
+	 <label><b>Email *</b></label></br><input type= "text" placeholder="email" required></p>
 	
 	
 	<legend align = "center"><b>Select Gender</b></legend>
-	</br>
+	</br></br>
 		<input type="radio" name="Male"[] value="Male"> Male
 		<input type="radio" name="Non-Binary"[] value="Non-Binary"> Non-Binary
 		<input type="radio" name="Female"[] value="Female"> Female
-	</br>
+	</br></br>
 	
-	<p><label><b>Date of Birth</b></label></br><input type= "date" name="DOB"></p>	
-	</br>
+	<label><b>Date of Birth</b></label></br><input type= "date" name="DOB">
+	</br></br>
 	<!-- //button to submit form data-->
 	<input type="submit" value="SUBMIT">
 	<!-- //button to reset form data-->
