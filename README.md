@@ -4,7 +4,7 @@ UX and UI design
 11th December 2018  Author: Mphephuttd
 
 
-*DOWNLOAD Banana folder.
+*DOWNLOAD Banana folder and save to desktop.
 
 *Change image directory to root to your specified desktop.
 
