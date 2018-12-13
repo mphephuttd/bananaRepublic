@@ -1,5 +1,5 @@
 # bananaRepublic
-UX and UI design 
+Front end challlenge (UX and UI design)
 
 Author  Mphephuttd
 
