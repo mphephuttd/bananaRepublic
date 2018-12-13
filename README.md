@@ -1,7 +1,8 @@
 # bananaRepublic
 UX and UI design 
 
-11th December 2018  Author: Mphephuttd
+Author  Mphephuttd
+Date    11th December 2018  
 
 
 *DOWNLOAD Banana folder and save to desktop.
